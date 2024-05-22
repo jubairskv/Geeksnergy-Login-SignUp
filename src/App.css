@@ -45,9 +45,6 @@
   margin-top: 20px;
 }
 
-/* src/App.css */
-
-/* src/App.css */
 
 .movie-list {
   display: flex;
@@ -71,7 +68,7 @@
 
 .movie-card img {
   width: 150px;
-  height: auto;
+  height: 250px;
   margin-right: 20px;
   border-radius: 5px;
   margin-left: 20px;
@@ -80,7 +77,14 @@
 .movie-card-content {
   display: flex;
   flex-direction: column;
+  gap: 6px;
 }
+.movie-poster {
+  width: 200px; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
 
 .movie-card h4 {
   margin-top: 0;
@@ -91,7 +95,8 @@
 .movie-card p {
   color: #666;
   font-size: 0.9em;
-  margin: 5px 0;
+  margin: 3px 0;
+  font-weight: 500;
 }
 
 .movie-card Button {
@@ -123,7 +128,7 @@
 
 .vote-count {
   font-size: 18px;
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 .movie-list {
@@ -134,3 +139,23 @@
 .vote{
   margin-top: 25px;
 }
+.movie-stats {
+  display: flex;
+  gap: 5px; 
+  
+}
+.movie-stats-text {
+  color: rgb(0, 128, 255);
+  font-size:small;
+  font-weight: normal; 
+}
+
+.custom-navbar {
+  background-color: #0d6efd !important;
+}
+
+.custom-text {
+  color: white !important;
+  font-weight: bold;
+}
+

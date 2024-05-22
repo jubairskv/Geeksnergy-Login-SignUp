@@ -72,7 +72,7 @@ const Home = () => {
                             <Form.Group className="mb-3 col-lg-6" controlId="formBasicPassword">
                                 <Form.Control type="password" name='password' onChange={getdata} placeholder="Password" />
                             </Form.Group>
-                            <Button variant="primary" className='col-lg-6' onClick={addData} style={{ background: "rgb(67, 185, 127)" }} type="submit">
+                            <Button variant="primary" className='col-lg-6' onClick={addData}  type="submit">
                                 Submit
                             </Button>
                         </Form>

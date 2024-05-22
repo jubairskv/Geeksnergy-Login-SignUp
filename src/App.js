@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import Details from './components/Details';
-import Errror from './components/Errror';
+import Error from './components/Error';
 import {Routes,Route} from "react-router-dom"
 import CompanyInfo from './components/CompanyInfo';
 
@@ -18,8 +18,9 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/details' element={<Details />} />
-      <Route path='*' element={<Errror />} />
       <Route path="/company-info" element={<CompanyInfo />} />
+      <Route path='*' element={<Error />} />
+     
     </Routes>
 
   </>

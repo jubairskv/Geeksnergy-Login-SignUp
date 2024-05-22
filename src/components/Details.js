@@ -57,21 +57,24 @@ const Details = () => {
                                 <div className="movie-card" key={index}>
                                     <div className="vote-section">
                                         <span className="vote-arrow up-arrow">🔼</span>
-                                        <span className="vote-count">{movie.totalVoted}</span>
+                                        <span className="vote-count">{movie.voting}</span>
                                         <span className="vote-arrow down-arrow">🔽</span>
                                         <span className='vote'>Votes</span>
                                     </div>
-                                    <img src={movie.poster} alt='movie-poster'/>
+                                    <img className="movie-poster" src={movie.poster} alt='movie-poster'/>
                                     <div className="movie-card-content">
                                         <h4>{movie.title}</h4>
                                         <p>Directors: {movie.director}</p>
                                         <p>Stars: {movie.stars}</p>
                                         <p>Genre: {movie.genre}</p>
                                         <p>Language: {movie.language}</p>
-                                        <p>{movie.pageViews} Views</p>
+                                        <div className="movie-stats">
+                                            <h6 className='movie-stats-text'>{movie.pageViews} Views</h6>
+                                            <h6 className='movie-stats-text'>Voted by {movie.voting} People</h6>
+                                        </div>
                                         <Button
                                             variant="primary"
-                                            onClick={() => window.open(movie.trailerUrl, '_blank')}
+                                            // onClick={() => window.open(movie.trailerUrl, '_blank')}
                                         >
                                             Watch Trailer
                                         </Button>
