@@ -1,5 +1,3 @@
-// src/components/CompanyInfo.js
-
 import React from 'react';
 
 const CompanyInfo = () => {

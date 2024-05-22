@@ -20,8 +20,6 @@ const Details = () => {
             const user = JSON.parse(getuser);
             setLoginData(user);
         }
-
-        // Fetch movie data when the component mounts
         fetchMovieData();
     }, []);
 
